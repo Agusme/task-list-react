@@ -4,7 +4,7 @@ import TaskList from "./TaskList";
 
 const FormTask = () => {
 //se define los estados
-let tasksFormLocalStorage = JSON.parse(localStorage.getItem('tasklist')) || []
+let tasksFormLocalStorage = JSON.parse(localStorage.getItem('tasklist')) || [];
 const [task, setTask] = useState('')
 const [tasks, setTasks] = useState(tasksFormLocalStorage)
 
@@ -67,7 +67,7 @@ const deleteTask = (taskName)=>{
         </Form.Group>
       </Form>
       <section className="container">
-      <TaskList taskArray ={tasks} deleteTask={deleteTask} ></TaskList>
+      <TaskList taskArray ={tasks} deleteTask={deleteTask}></TaskList>
 
       </section>
     </>
